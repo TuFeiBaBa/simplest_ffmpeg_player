@@ -130,7 +130,7 @@ int main(int argc, char* argv[])
 	struct SwrContext* au_convert_ctx;
 
 	FILE* pFile = NULL;
-	char url[] = "xiaoqingge.mp3";
+	char url[] = "../../../simplest_ffmpeg_audio_player/xiaoqingge.mp3";
 
 	//av_register_all();
 	avformat_network_init();

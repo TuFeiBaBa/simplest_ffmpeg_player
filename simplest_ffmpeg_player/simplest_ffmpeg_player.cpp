@@ -34,7 +34,7 @@ extern "C"
 #include "libswscale/swscale.h"
 #include "libavutil/imgutils.h"
 #include "libavutil/error.h"
-#include "SDL.h"
+#include "SDL2/SDL.h"
 };
 #else
  //Linux...
@@ -45,7 +45,7 @@ extern "C"
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <libavutil/imgutils.h>
 #ifdef __cplusplus
 };
@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
 	int ret, got_picture;
 	struct SwsContext* img_convert_ctx;
 
-	char filepath[] = "trailer.mp4";
+	char filepath[] = "../../../simplest_ffmpeg_player/trailer.mp4";
 	//SDL---------------------------
 	int screen_w = 0, screen_h = 0;
 	SDL_Window* screen;

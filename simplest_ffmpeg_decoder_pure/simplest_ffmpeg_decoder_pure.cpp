@@ -71,16 +71,16 @@ int main(int argc, char* argv[])
 #if TEST_HEVC
 	//HEVC¼´h265
 	enum AVCodecID codec_id = AV_CODEC_ID_HEVC;
-	char filepath_in[] = "bigbuckbunny_480x272.hevc";
+	char filepath_in[] = "../../../simplest_ffmpeg_decoder_pure/bigbuckbunny_480x272.hevc";
 #elif TEST_H264
 	AVCodecID codec_id = AV_CODEC_ID_H264;
-	char filepath_in[] = "bigbuckbunny_480x272.h264";
+	char filepath_in[] = "../../../simplest_ffmpeg_decoder_pure/bigbuckbunny_480x272.h264";
 #else
 	AVCodecID codec_id = AV_CODEC_ID_MPEG2VIDEO;
-	char filepath_in[] = "bigbuckbunny_480x272.m2v";
+	char filepath_in[] = "../../../simplest_ffmpeg_decoder_pure/bigbuckbunny_480x272.m2v";
 #endif
 
-	char filepath_out[] = "bigbuckbunny_480x272.yuv";
+	char filepath_out[] = "../../../simplest_ffmpeg_decoder_pure/bigbuckbunny_480x272.yuv";
 	int first_time = 1;
 
 

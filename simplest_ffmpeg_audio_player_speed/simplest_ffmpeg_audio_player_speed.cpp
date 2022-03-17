@@ -536,7 +536,7 @@ int main(int argc, char* argv[])
 	AudioParams* outParams;
 
 	FILE* pFile = NULL;
-	char url[] = "xiaoqingge.mp3";
+	char url[] = "../../../simplest_ffmpeg_audio_player_speed/xiaoqingge.mp3";
 
 
 	pFormatCtx = initAVFormatContext(url);
